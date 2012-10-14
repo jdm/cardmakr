@@ -103,7 +103,9 @@
 
     #front, #back {
 	transform-origin: center;
+	-webkit-transform-origin: center;
 	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
     }
 
     .squadrant div {
