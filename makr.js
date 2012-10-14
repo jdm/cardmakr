@@ -36,8 +36,6 @@ $(document).ready(function() {
     addText();
   });
                     
-  $('#insert-picture');
-                    
   var triggers = $(".modalInput").overlay({ 
     mask: {
       color: '#ebecff',
