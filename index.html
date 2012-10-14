@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.tools.min.js"></script>
+  <script type="text/javascript" src="makr.js"></script>
+</head>
+<body>
+  <div id="menu">
+    <div class="entry" id="front-entry">Front</div>
+    <div class="entry" id="back-entry">Back</div>
+    <div class="entry" id="left-entry">Inside left</div>
+    <div class="entry" id="right-entry">Inside right</div>
+    <div class="entry" id="spread-entry">Inside spread</div>
+    <hr>
+    <div class="entry" id="insert-text">Add text</div>
+    <div class="entry modalInput" id="insert-picture" rel="#prompt">Add picture</div>
+  </div>
+  <span id="content">
+    <span id="front" class="quadrant">
+      <div>
+	front
+      </div>
+    </span>
+    <span id="back" class="quadrant">
+      <div>
+	back
+      </div>
+    </span>
+    <span id="inside-left" class="quadrant">
+      <div>
+	left
+      </div>
+    </span>
+    <span id="inside-right" class="quadrant">
+      <div>
+	right
+      </div>
+    </span>
+  </div>
+
+  <div class="modal" id="prompt">
+    <h2>Choose a picture</h2>
+    
+    <p>
+      Specify a remote picture to add to your card.
+    </p>
+    
+    <form>
+      <input id="remotepic" />
+      <!--<input type="file" id="picupload">--> <br>
+      <button type="submit"> OK </button>
+      <button type="button" class="close"> Cancel </button>
+    </form>
+    <br>
+    
+  </div>
+</body>
+</html>

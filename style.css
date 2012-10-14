@@ -1,0 +1,130 @@
+#content {
+}
+
+.quadrant {
+    float: left;
+    border: 1px solid black;
+    display: none;
+    width: 4.25in;
+    height: 5.5in;
+    position: relative;
+}
+
+.visible {
+    display: inline;
+}
+
+.selected {
+    outline: 2px dashed red;
+}
+
+.modal {
+    background-color:#fff;
+    display:none;
+    width:350px;
+    padding:15px;
+    text-align:left;
+    border:2px solid #333;
+
+    opacity:0.8;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+}
+ 
+.modal h2 {
+    /*background:url(/media/img/global/info.png) 0 50% no-repeat;*/
+    margin:0px;
+    padding:10px 0 10px 45px;
+    border-bottom:1px solid #333;
+    font-size:20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .quadrant {
+        width: 8.5in;
+        height: 11in;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .quadrant {
+        width: 12.75in;
+        height: 16.5in;
+    }
+}
+
+#menu {
+    float: left;
+}
+
+#menu .entry {
+    background-color: #BBBBBB;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
+
+#menu .entry:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+
+#menu .entry:active {
+    background-color: #888888;
+    box-shadow: inset 5px 5px 5px black;
+}
+
+.newtext {
+    font-size: 300%;
+}
+
+@media print {
+    #content {
+	width: 8.5in;
+	height: 11in;
+        float: left;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .quadrant {
+	display: inline;
+        border: none;
+        width: 4.25in;
+        height: 5.5in;        
+    }
+
+    #front, #back {
+	transform-origin: center;
+	transform: rotate(180deg);
+    }
+
+    .squadrant div {
+	transform-origin: top left;
+	transform: translateX(5.5in) rotate(90deg);
+	transform: translateX(4.25in) rotate(90deg);
+    }
+
+    #front {
+	float: left;
+    }
+
+    #back {
+	float: right;
+    }
+
+    #inside-left {
+	float: left;
+    }
+
+    #inside-right {
+	float: right;
+    }
+}
