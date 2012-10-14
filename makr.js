@@ -158,6 +158,14 @@ $(document).mouseup(function(ev) {
   }
 });
 
+$(document).keypress(function(ev) {
+  if (ev.keyCode != 46 || !gSelected || gSelected.contentEditable == "true")
+    return;
+  gSelected.parentNode.removeChild(gSelected);
+  deselect();
+  ev.preventDefault();
+});
+
 function addText() {
   var sp = document.createElement('span');
   sp.textContent = "Your text goes here";
